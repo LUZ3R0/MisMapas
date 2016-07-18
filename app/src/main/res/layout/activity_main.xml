@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <TextView
+            android:id="@+id/tvTexto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lugares concurridos"
+            android:textSize="@dimen/abc_text_size_large_material"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Parque S. Martín"
+            android:id="@+id/tvParque"
+            android:textSize="@dimen/abc_text_size_small_material"
+            android:layout_below="@+id/tvTexto"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="40dp"/>
+
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/imgB1"
+            android:src="@drawable/parque"
+            android:layout_below="@+id/tvParque"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:onClick="irMapa1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Municipalidad"
+            android:id="@+id/tvMunicipalidad"
+            android:textSize="@dimen/abc_text_size_small_material"
+            android:layout_above="@+id/imgB2"
+            android:layout_alignLeft="@+id/imgB2"
+            android:layout_alignStart="@+id/imgB2" />
+
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/imgB2"
+            android:src="@drawable/municipalidad"
+            android:layout_above="@+id/tvNewbery"
+            android:layout_alignLeft="@+id/imgB4"
+            android:layout_alignStart="@+id/imgB4"
+            android:onClick="irMapa3"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Cine J.Newbery"
+            android:id="@+id/tvNewbery"
+            android:layout_marginTop="37dp"
+            android:layout_below="@+id/imgB1"
+            android:layout_alignLeft="@+id/imgB1"
+            android:layout_alignStart="@+id/imgB1"
+            android:textSize="@dimen/abc_text_size_small_material" />
+
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/imgB3"
+            android:src="@drawable/newbery"
+            android:layout_below="@+id/tvNewbery"
+            android:layout_alignLeft="@+id/tvNewbery"
+            android:layout_alignStart="@+id/tvNewbery"
+            android:onClick="irMapa4"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="P. Rivadavia"
+            android:id="@+id/tvPlaza"
+            android:textSize="@dimen/abc_text_size_small_material"
+            android:layout_alignTop="@+id/tvNewbery"
+            android:layout_alignLeft="@+id/imgB4"
+            android:layout_alignStart="@+id/imgB4" />
+
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/imgB4"
+            android:src="@drawable/plazarivadavia"
+            android:layout_alignTop="@+id/imgB3"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:onClick="irMapa2"/>
+
+</RelativeLayout>
+
+
